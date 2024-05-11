@@ -1,0 +1,108 @@
+body{
+    /* background-image: url(./back1.jpg); */
+    background-color: rgba(0, 0, 255, 0.603);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+input{
+    width: 230px;
+    padding: 3px 2px;
+    outline-style: none;
+}
+.sec{
+  
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 220px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border: 1px solid rgba(247, 243, 243, 0) ;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+     border-top-left-radius: 2%;
+    /* border-bottom-left-radius: 30% ; */
+    /* border-top-right-radius: 30%; */
+    outline-style: none;
+    
+
+}
+.sec1{
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 230px;
+    height: 390px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    padding-top: 2px;
+    border: 7px solid rgba(247, 243, 243, 0.945) ;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+     border-top-left-radius: 20%;
+    /* border-bottom-left-radius: 30% ; */
+    /* border-top-right-radius: 30%; */
+    outline-style: none;
+    
+
+}
+.fab fa-facebook{
+    background-color: blue;
+}
+.button{
+    width: 210px;
+    height: 30px;
+background-color: rgba(0, 0, 255, 0.781);
+color: rgb(255, 255, 255);
+border-radius: 5px;
+}
+
+.butt{
+
+    color: blue; 
+
+}
+/* Style for input box */
+.input-box {
+    width: 200px; /* Adjust the width of the input box */
+    padding: 5px; /* Add padding inside the input box */
+    border: 1px solid #ccc; /* Add border with color */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 10px; /* Set font size */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Style for input box when focused */
+  .input-box:focus {
+    border-color: #007bff3a; /* Change border color when focused */
+    box-shadow: 0 0 1px rgba(0, 123, 255, 0.5); Add shadow when focused
+  }
+  .port0{
+    text-align: left;
+  }
+  .icons{
+    color: blue;
+  }
+  
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .ultag{
+display: flex;  
+    /* background-color: #111;/ */
+  }
+  
+  

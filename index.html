@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./icon/all.min.css">
+    <title>class1</title>
+</head>
+<body>
+    <section class="sec">
+        <script>
+            
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+
+        </script>
+    <form >
+        <p align="center" aria-flowto="arial"><h3>Login</h3> </p>
+<input type="text" placeholder="Email" class="input-box">
+<br>
+<br>
+<input type="password" placeholder="Password" class="input-box">
+<br><br>
+<i align="center" class="butt">Forget Password? </i><br> <br> 
+<button class="button">Login</button><br><br>
+<i> Don't have an account? <a href=signup.html>sign up</a> </i>
+<br><br>
+<div style="display: flex;">
+
+<hr style="width: 85px; position:absolute; left: 470px;" ><i style="width: 80px; position:absolute; left: 530px;">Or</i>  <hr style="width: 85px; position:absolute; right: 470px;">
+
+</div>	
+<br><br>
+<!-- <u></u>    <Br><Br> -->
+    <div class="icons">
+        <button class="fab fa-facebook" class="button"> Login with Facebook</button>
+        <br><br>
+        <button class="fab fa-google"> Login with Google</button>
+    </div>
+</form>
+</section>
+</body>
+</html>
